@@ -33,7 +33,7 @@ subhanAllahIncrementBtn.addEventListener('click', function(){
 subhanAllahDecrementBtn.addEventListener('click', function(){
     
     if(subhanAllahInitialValue <= 0){
-        return alert ('You can`t added a negative value')
+        return alert ('You can`t added a negative value.')
     }
     
     subhanAllahInitialValue -= 1;
@@ -42,13 +42,39 @@ subhanAllahDecrementBtn.addEventListener('click', function(){
 
 alhamdulilhahIncrementBtn.addEventListener('click', function(){
     if(alhamdulilahInitialValue === 33){
-        
+        return alert ('Alhamdulilah Complete, please fill up last one.')
     }
 
     alhamdulilahInitialValue += 1;
     alhamdulilhahScreen.innerText = alhamdulilahInitialValue;
 })
 
+alhamdulilhahDecrementBtn.addEventListener('click', function(){
+    if(alhamdulilahInitialValue <= 0){
+        return alert ('You can`t added a negative value.');
+    }
+
+    alhamdulilahInitialValue -= 1;
+    alhamdulilhahScreen.innerText = alhamdulilahInitialValue;
+})
+
+allahuAkberIncrementBtn.addEventListener('click', function(){
+    if(allahuAkberInitialValue === 34){
+        return alert ('Good job.Your zikr was completed,DO once More!')
+    }
+
+    allahuAkberInitialValue += 1;
+    allahuAkberScreen.innerText = allahuAkberInitialValue;
+})
+
+allahuAkberDecrementBtn.addEventListener('click', function(){
+    if (allahuAkberInitialValue <= 0){
+        return alert('You can`t added a negative value.')
+    }
+
+    allahuAkberInitialValue -= 1;
+    allahuAkberScreen.innerText = allahuAkberInitialValue;
+})
 
 resetTasbih.addEventListener('click', function(){
     subhanAllahScreen.innerText = 0;
