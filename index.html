@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Tasbih</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gradient-to-r from-indigo-500 from-10% via-sky-500 via-30% to-emerald-500 to-90% min-h-screen">
+    <main>
+        <div class="pt-20 flex justify-center items-center">
+            <h1 class="text-transparent bg-clip-text bg-gradient-to-r from-yellow-500 to-green-800 text-6xl font-extrabold  h-20">Digital Tasbih</h1>
+        </div>
+        <section>
+                <!-- div-one -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 justify-center items-center mt-20 gap-4 mx-20">
+                <div class="card bg-neutral text-neutral-content">
+                    <div class="card-body items-center text-center">
+                        <h2 class="card-title">Subhan Allah</h2>
+
+                        <span id="subhan-allah-screen">0</span>
+                        
+                        <div class="card-actions justify-end">
+                            <button id="subhan-allah-increment-btn" class="btn bg-green-600">Increment</button>
+                            <button id="subhan-allah-decrement-btn" class="btn bg-red-700">Decrement</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- div-two -->
+                <div class="card bg-neutral text-neutral-content">
+                    <div class="card-body items-center text-center">
+                        <h2 class="card-title">Alhamdulilhah</h2>
+                        <span id="alhamdulilah-screen">0</span>
+                        <div class="card-actions justify-end">
+                            <button id="alhamdulilah-increment-btn" class="btn bg-green-600">Increment</button>
+                            <button id="alhamdulilah-decrement-btn" class="btn bg-red-700">Decrement</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- div-three -->
+                <div class="card bg-neutral text-neutral-content">
+                    <div class="card-body items-center text-center">
+                        <h2 class="card-title">AllahuAkber</h2>
+                        <span id="allah-akber-screen">0</span>
+                        <div class="card-actions justify-end">
+                            <button id="allah-akbar-increment-btn" class="btn bg-green-600">Increment</button>
+                            <button id="allah-akber-decrement-btn" class="btn bg-red-700">Decrement</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="flex justify-center pt-20">
+                <button id="reset-all-tasbih" class="btn btn-wide bg-yellow-500">RESET ALL TASBIH</button>
+            </div>
+        </section>
+    </main>
+
+    <!-- scripts section -->
+    <script src="js/main.js"></script>
+</body>
+</html>
